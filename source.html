@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script src="rng.js"></script>
+<script src="generate.js"></script>
+
+<script>
+
+function go(id) {
+
+var seed = document.getElementById("seedArea").value;
+var rng = new RNG(convertString(seed));
+
+var code = makeCode(rng);
+
+$("#output").html(
+code
+);
+
+}
+
+</script>
+</head>
+
+<body>
+<h2>Enter a seed</h2>
+<form>
+<textarea rows="1" cols="20" id="seedArea"></textarea>
+<input id="input" type="button" value="Go!" onclick="go(this)">
+</form>
+
+<div id="output"></div>
+
+</body>
+
+
+</html>
