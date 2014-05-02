@@ -1,4 +1,4 @@
-lab03_christiandaley
-====================
+CS130E-S14-Labs
+===============
 
-lab03 for Christian Daley
+labs for CS130E-S14
